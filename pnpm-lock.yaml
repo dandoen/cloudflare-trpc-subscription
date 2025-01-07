@@ -9,11 +9,11 @@ importers:
   .:
     dependencies:
       '@trpc/client':
-        specifier: file:../trpc/packages/client
-        version: file:../trpc/packages/client(@trpc/server@file:../trpc/packages/server(typescript@5.7.2))(typescript@5.7.2)
+        specifier: 11.0.0-rc.666
+        version: 11.0.0-rc.666(@trpc/server@11.0.0-rc.666(typescript@5.7.2))(typescript@5.7.2)
       '@trpc/server':
-        specifier: file:../trpc/packages/server
-        version: file:../trpc/packages/server(typescript@5.7.2)
+        specifier: 11.0.0-rc.666
+        version: 11.0.0-rc.666(typescript@5.7.2)
       zod:
         specifier: ^3.22.4
         version: 3.24.1
@@ -473,16 +473,16 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@trpc/client@file:../trpc/packages/client':
-    resolution: {directory: ../trpc/packages/client, type: directory}
+  '@trpc/client@11.0.0-rc.666':
+    resolution: {integrity: sha512-BP3H0bktY03m7haVT5QoPR4sn30DNJcvFHsA3Msj3uPRY8JLVE03MR4rVG6T7VbcglORKpyMlRxjpUgdRmJErA==}
     peerDependencies:
-      '@trpc/server': ^10.45.1
-      typescript: '>=5.7.2'
+      '@trpc/server': 11.0.0-rc.666+99556c074
+      typescript: '>=5.6.2'
 
-  '@trpc/server@file:../trpc/packages/server':
-    resolution: {directory: ../trpc/packages/server, type: directory}
+  '@trpc/server@11.0.0-rc.666':
+    resolution: {integrity: sha512-k+jKrdH/owDRRXPR7oPKCQRTu0dOEnqdGh56863ym95sFY8qXE7BhOR8S4WqyZw1CiPZGjRkdFN0q/GsJhKsIA==}
     peerDependencies:
-      typescript: '>=5.7.2'
+      typescript: '>=5.6.2'
 
   '@types/estree@1.0.6':
     resolution: {integrity: sha512-AYnb1nQyY49te+VRAVgmzfcgjYS91mY5P0TKUDCLEM+gNnA+3T6rWITXRLYCpahpqSQbN5cE+gHpnPyXjHWxcw==}
@@ -1177,12 +1177,12 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.30.0':
     optional: true
 
-  '@trpc/client@file:../trpc/packages/client(@trpc/server@file:../trpc/packages/server(typescript@5.7.2))(typescript@5.7.2)':
+  '@trpc/client@11.0.0-rc.666(@trpc/server@11.0.0-rc.666(typescript@5.7.2))(typescript@5.7.2)':
     dependencies:
-      '@trpc/server': file:../trpc/packages/server(typescript@5.7.2)
+      '@trpc/server': 11.0.0-rc.666(typescript@5.7.2)
       typescript: 5.7.2
 
-  '@trpc/server@file:../trpc/packages/server(typescript@5.7.2)':
+  '@trpc/server@11.0.0-rc.666(typescript@5.7.2)':
     dependencies:
       typescript: 5.7.2
 
